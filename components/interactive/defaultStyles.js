@@ -11,6 +11,13 @@ export const buttonStyles = StyleSheet.create({
     marginHorizontal: 12,
     borderRadius: 8,
   },
+  disabledButton: {
+    backgroundColor: '#CCC',
+    padding: 10,
+    marginVertical: 24,
+    marginHorizontal: 12,
+    borderRadius: 8,
+  },
   buttonText: {
     color: '#FFF',
     fontSize: 24,

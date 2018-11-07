@@ -17,6 +17,7 @@ const HomeStack = createStackNavigator({
   Welcome: { screen: WelcomeScreen },
   UserTypeChooser: { screen: UserTypeScreen },
   CreateAccount: { screen: CreateAccountScreen },
+  HomeScreen: { screen: HomeScreen },
 });
 
 HomeStack.navigationOptions = {
@@ -42,7 +43,7 @@ LinksStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'}
+      name={Platform.OS === 'ios' ? `ios-link` : 'md-link'}
     />
   ),
 };
@@ -56,7 +57,7 @@ SettingsStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
+      name={Platform.OS === 'ios' ? `ios-options` : 'md-options'}
     />
   ),
 };
